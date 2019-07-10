@@ -1,0 +1,74 @@
+{
+    "name": "contact-ui",
+    "productName": "Contact UI",
+    "version": "0.0.1",
+    "description": "GUI For touch screen RPI",
+    "license": "MIT",
+    "repository": "markmcgookin/contact-ui",
+    "author": {
+        "name": "Mark McGookin",
+        "email": "mark@markmcgookin.com",
+        "url": "https://markmcgookin.com"
+    },
+    "scripts": {
+        "postinstall": "electron-builder install-app-deps",
+        "lint": "xo",
+        "test": "npm run lint",
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder --macos --linux --windows",
+        "release": "np"
+    },
+    "dependencies": {
+        "electron-context-menu": "^0.12.1",
+        "electron-debug": "^3.0.0",
+        "electron-store": "^3.3.0",
+        "electron-unhandled": "^2.2.0",
+        "electron-updater": "^4.0.6",
+        "electron-util": "^0.12.0"
+    },
+    "devDependencies": {
+        "electron": "^5.0.4",
+        "electron-builder": "^20.43.0",
+        "np": "^5.0.3",
+        "xo": "^0.24.0"
+    },
+    "xo": {
+        "envs": [
+            "node",
+            "browser"
+        ]
+    },
+    "np": {
+        "publish": false,
+        "releaseDraft": false
+    },
+    "build": {
+        "appId": "com.markmcgookin.contact-ui",
+        "mac": {
+            "category": "public.app-category.user-interface",
+            "darkModeSupport": true
+        },
+        "dmg": {
+            "iconSize": 160,
+            "contents": [{
+                    "x": 180,
+                    "y": 170
+                },
+                {
+                    "x": 480,
+                    "y": 170,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ],
+            "category": "UI;"
+        }
+    }
+}
