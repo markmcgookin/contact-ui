@@ -9,6 +9,7 @@ function createWindow() {
     win = new BrowserWindow({
         width: 800,
         height: 600,
+        fullscreen: true,
         webPreferences: {
             nodeIntegration: true
         }
@@ -18,7 +19,7 @@ function createWindow() {
     win.loadFile('src/index.html')
 
     // Open the DevTools.
-    win.webContents.openDevTools()
+    //win.webContents.openDevTools()
 
     // Emitted when the window is closed.
     win.on('closed', () => {
@@ -52,4 +53,4 @@ app.on('activate', () => {
 })
 
 // In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
+// code. You can also put them in separate files and require them here
