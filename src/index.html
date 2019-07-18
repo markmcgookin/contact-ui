@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,14 @@
 
     <title>Home</title>
     <!-- main JS libs -->
+    <!-- https://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined/37480521#37480521 -->
+    <script>
+        if (typeof module === 'object') {
+            window.module = module;
+            module = undefined;
+        }
+    </script>
+
     <script src="js/libs/modernizr.min.js"></script>
     <script src="js/libs/jquery-1.10.0.js"></script>
     <script src="js/libs/jquery-ui.min.js"></script>
@@ -19,6 +27,11 @@
 
     <!-- Scripts -->
     <script src="js/general.js"></script>
+
+    <script>
+        if (window.module) module = window.module;
+    </script>
+
 
 </head>
 
