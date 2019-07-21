@@ -12,9 +12,15 @@ namespace contact.ui.Views
         private bool _0Pressed, _1Pressed, _2Pressed;
         public MainWindow()
         {
-            InitializeComponent();
             this.KeyDown += new System.EventHandler<Avalonia.Input.KeyEventArgs>(KeyPressHandler);
             this.KeyUp += new System.EventHandler<Avalonia.Input.KeyEventArgs>(KeyUpHandler);
+            this.Initialized += new System.EventHandler(ResizeWindow);
+            InitializeComponent();
+        }
+
+        void ResizeWindow(object sender, EventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;   
         }
 
         void KeyPressHandler(object sender, KeyEventArgs e)
@@ -69,10 +75,9 @@ namespace contact.ui.Views
         private void InitializeComponent()
         {
             this.HasSystemDecorations = false;
-            this.WindowState = WindowState.Maximized;
             this.Topmost = true;
-            //this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             AvaloniaXamlLoader.Load(this);
         }
+
     }
 }

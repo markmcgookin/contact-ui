@@ -4,18 +4,25 @@
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
   mc:Ignorable="d"
   x:Class="contact.ui.Views.MenuView">
-  <StackPanel>
+  <UserControl.Styles>
+    <Style Selector="Button.MenuButton">
+      <Setter Property="Width" Value="380" />
+      <Setter Property="Height" Value="140" />
+      <Setter Property="Margin" Value="10" />
+    </Style>
+  </UserControl.Styles>
+  <StackPanel Width="800">
     <StackPanel Orientation="Horizontal">
-      <Button DockPanel.Dock="Left">Report 1</Button>
-      <Button DockPanel.Dock="Right">Report 2</Button>
+      <Button Classes="MenuButton left" DockPanel.Dock="Left">Report 1</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 2</Button>
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button DockPanel.Dock="Left">Report 3</Button>
-      <Button DockPanel.Dock="Right">Report 4</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Left">Report 3</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 4</Button>
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button DockPanel.Dock="Left">Report 5</Button>
-      <Button DockPanel.Dock="Right">Report 6</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Left">Report 5</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 6</Button>
     </StackPanel>
   </StackPanel>
 </UserControl>
