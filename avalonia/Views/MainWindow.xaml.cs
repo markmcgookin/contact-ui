@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -20,7 +21,10 @@ namespace contact.ui.Views
 
         void ResizeWindow(object sender, EventArgs e)
         {
-            this.WindowState = WindowState.Maximized;   
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+            {
+                this.WindowState = WindowState.Maximized;
+            }
         }
 
         void KeyPressHandler(object sender, KeyEventArgs e)

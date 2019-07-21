@@ -1,28 +1,42 @@
-<UserControl xmlns="https://github.com/avaloniaui" 
-  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-  mc:Ignorable="d"
-  x:Class="contact.ui.Views.MenuView">
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="contact.ui.Views.MenuView" Background="{StaticResource BackgroundGradient}">
+  <UserControl.Resources>
+    <LinearGradientBrush x:Key="BackgroundGradient">
+      <GradientStop Offset="0" Color="#0E0E0E"/>
+      <GradientStop Offset="0.5" Color="#282828"/>
+      <GradientStop Offset="1" Color="#0E0E0E"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush StartPoint="0%,0%" EndPoint="0%,100%" x:Key="ButtonGradient">
+      <GradientStop Offset="0" Color="#de7436"/>
+      <GradientStop Offset="1" Color="#c4450f"/>
+    </LinearGradientBrush>
+  </UserControl.Resources>
   <UserControl.Styles>
     <Style Selector="Button.MenuButton">
-      <Setter Property="Width" Value="380" />
-      <Setter Property="Height" Value="140" />
-      <Setter Property="Margin" Value="10" />
+      <Setter Property="Width" Value="380"/>
+      <Setter Property="Height" Value="100"/>
+      <Setter Property="Margin" Value="5, 20"/>
+      <Setter Property="Background" Value="{StaticResource ButtonGradient}"/>
+      <Setter Property="BorderThickness" Value="0"/>
+      <Setter Property="FontSize" Value="25" />
+      <Setter Property="Foreground" Value="#FFFFFF"/>
     </Style>
+    <Style Selector="Button.MenuButton /template/ ContentPresenter">
+        <Setter Property="CornerRadius" Value="5"/>
+      </Style>
   </UserControl.Styles>
   <StackPanel Width="800">
+    <TextPresenter Foreground="#959da6" FontFamily="Helvetica" FontSize="25" HorizontalAlignment="Center" Margin="0, 10">Select Option</TextPresenter>
     <StackPanel Orientation="Horizontal">
-      <Button Classes="MenuButton left" DockPanel.Dock="Left">Report 1</Button>
-      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 2</Button>
+        <Button Classes="MenuButton left" DockPanel.Dock="Left" Content="READ MORE" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button Classes="MenuButton" DockPanel.Dock="Left">Report 3</Button>
-      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 4</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button Classes="MenuButton" DockPanel.Dock="Left">Report 5</Button>
-      <Button Classes="MenuButton" DockPanel.Dock="Right">Report 6</Button>
+      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
     </StackPanel>
   </StackPanel>
 </UserControl>
