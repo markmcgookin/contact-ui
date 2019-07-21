@@ -8,7 +8,6 @@
     x:Class="contact.ui.Views.MainWindow" 
     Icon="/Assets/avalonia-logo.ico" 
     Title="contact.ui"
-    WindowState="Maximized"
     Width="800"
     Height="480">
         <views:MenuView />

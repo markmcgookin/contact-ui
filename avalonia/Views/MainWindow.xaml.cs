@@ -71,7 +71,7 @@ namespace contact.ui.Views
             this.HasSystemDecorations = false;
             this.WindowState = WindowState.Maximized;
             this.Topmost = true;
-            this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            //this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             AvaloniaXamlLoader.Load(this);
         }
     }
