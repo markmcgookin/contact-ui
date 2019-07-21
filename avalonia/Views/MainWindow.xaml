@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:vm="clr-namespace:contact.ui.ViewModels;assembly=contact.ui" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:views="clr-namespace:contact.ui.Views" 
+    mc:Ignorable="d" 
+    x:Class="contact.ui.Views.MainWindow" 
+    Icon="/Assets/avalonia-logo.ico" 
+    Title="contact.ui"
+    WindowState="Maximized"
+    Width="800"
+    Height="480">
+        <views:MenuView />
+</Window>
