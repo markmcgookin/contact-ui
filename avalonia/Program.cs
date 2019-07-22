@@ -24,6 +24,7 @@ namespace contact.ui
         // container, etc.
         private static void AppMain(Application app, string[] args)
         {
+            //Adding this comment to trigger a build
             var window = new MainWindow
             {
                 DataContext = new MainWindowViewModel(),
