@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contact.ui", "App\contact.ui.csproj", "{2787F281-1E32-4BA1-A017-E7FE9F5716AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Test\Tests.csproj", "{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{2787F281-1E32-4BA1-A017-E7FE9F5716AD}.Release|x64.Build.0 = Release|Any CPU
 		{2787F281-1E32-4BA1-A017-E7FE9F5716AD}.Release|x86.ActiveCfg = Release|Any CPU
 		{2787F281-1E32-4BA1-A017-E7FE9F5716AD}.Release|x86.Build.0 = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|x64.Build.0 = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|x64.Build.0 = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE50C5A9-5724-4670-B7D6-F4E9127FF89F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
