@@ -27,16 +27,16 @@
   <StackPanel Width="800">
     <TextPresenter Foreground="#959da6" FontFamily="Helvetica" FontSize="25" HorizontalAlignment="Center" Margin="0, 10">Select Option</TextPresenter>
     <StackPanel Orientation="Horizontal">
-        <Button Classes="MenuButton left" DockPanel.Dock="Left" Content="READ MORE" />
-      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
+        <Button Classes="MenuButton left" DockPanel.Dock="Left" Content="READ MORE 1" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE 2" />
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE" />
-      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
+      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE 3" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE 4" />
     </StackPanel>
     <StackPanel Orientation="Horizontal">
-      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE" />
-      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE" />
+      <Button Classes="MenuButton" DockPanel.Dock="Left" Content="READ MORE 5" />
+      <Button Classes="MenuButton" DockPanel.Dock="Right" Content="READ MORE 6" />
     </StackPanel>
   </StackPanel>
 </UserControl>
