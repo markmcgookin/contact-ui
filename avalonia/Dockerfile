@@ -4,14 +4,13 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /app
 
 # copy csproj and restore as distinct layers
-COPY *.csproj .
-COPY nuget.config .
+COPY App/*.csproj .
 
 #RUN ["dotnet", "restore", "--configfile", "nuget.config"]
 RUN ["dotnet", "restore"]
 
 # copy and publish app and libraries
-COPY . .
+COPY App/. ./
 RUN dotnet publish -c Release -o out
 
 # Change back and remove user-secrets once this is figured out and tied up to keyvalue properly
